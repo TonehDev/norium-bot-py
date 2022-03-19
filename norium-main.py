@@ -8,7 +8,7 @@ import json
 
 intents = nextcord.Intents.default()
 intents.members = True
-client = commands.Bot(command_prefix=";", intents=intents)
+client = commands.Bot(command_prefix=";", case_insensitive = True, intents=intents)
 client.remove_command("help")
 token = "nope"
 
