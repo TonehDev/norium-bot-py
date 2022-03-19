@@ -10,7 +10,7 @@ intents = nextcord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix=";", intents=intents)
 client.remove_command("help")
-token = "ODcxNDU0MTg0MjEyNDEwNDA4.YQbi9A.3e8EBt9hJCtYT-3lAm9_dn3bgr4"
+token = "nope"
 
 @client.command()
 @commands.is_owner()
