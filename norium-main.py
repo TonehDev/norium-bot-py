@@ -108,7 +108,7 @@ async def warn(ctx,
         icon_url=
         "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
         text="Norium Bot")
-    await member.send(embed=embed)
+    await member.send(embed=embed) #credits: alphascript
 
 
 @warn.error
@@ -170,7 +170,7 @@ async def warnings(ctx, member: nextcord.Member = None):
             title=f"Warnings for {member.name}#{member.discriminator}",
             description="This user has no warning history.",
             color=nextcord.Color.red())
-        await ctx.send(embed=embed)
+        await ctx.send(embed=embed) #credits: alphascript
 
 
 @warnings.error
