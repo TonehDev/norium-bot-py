@@ -21,7 +21,7 @@ class Start(commands.Cog):
   async def on_ready(self):
     await self.client.change_presence(activity=nextcord.Activity(
         type=nextcord.ActivityType.listening, name=";help"))
-    print(self.client.user.name + " is online!")
+    print(self.client.user.name + " is now online.")
 
 def setup(client):
   client.add_cog(Start(client))
