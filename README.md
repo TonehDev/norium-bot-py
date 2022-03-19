@@ -16,7 +16,6 @@ Norium Bot is a Discord Bot made in Python powered by the Nextcord library.
 ## Credits
 * Glowstik
 * Carberra
-* Alphascript
 
 
 ![norium_logo](https://user-images.githubusercontent.com/88310222/156601126-f0a56f4b-649d-4e1a-847e-3013012ae2f4.png)
