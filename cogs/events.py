@@ -7,15 +7,10 @@ class Start(commands.Cog):
     self.client = client
 
   @commands.Cog.listener()
-  async def on_command_error(self, ctx, error):
-    if isinstance(error, commands.CommandNotFound):
-      embed = nextcord.Embed(
-        title = "Unknown Command",
-        description = f"No command named ``{ctx.message.content}`` found.",
-        color = nextcord.Color.red()
-      )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
-      await ctx.send(embed=embed)
+  async def on_message(self, message):
+    bot = f'<@!{self.client.user.id}>'
+    if message.content == bot:
+      await message.channel.send("My prefix is **;**")
 
   @commands.Cog.listener()
   async def on_ready(self):
