@@ -218,11 +218,11 @@ async def help(ctx):
     view.add_item(website)
 
     embed = nextcord.Embed(title="Help Menu", color=nextcord.Color.blurple())
-    embed.add_field(name="Moderation", value="``;help moderation``", inline = False)
-    embed.add_field(name="Misc", value="``;help misc``", inline = False)
-    embed.add_field(name="Utility", value="``;help utility``", inline = False)
-    embed.add_field(name="Fun", value="``;help fun``", inline = False)
-    embed.add_field(name="Server Management", value="``;help management``", inline = False)
+    embed.add_field(name="Moderation", value="``;help moderation``")
+    embed.add_field(name="Misc", value="``;help misc``")
+    embed.add_field(name="Utility", value="``;help utility``")
+    embed.add_field(name="Fun", value="``;help fun``")
+    embed.add_field(name="Server Management", value="``;help management``")
     embed.add_field(name="**OR**", value="Choose something from the dropdown below.")
     embed.set_footer(
         icon_url=
