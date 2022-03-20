@@ -33,7 +33,7 @@ class Giveaway(commands.Cog):
 
     time_convert = {"s":1, "m":60, "h":3600, "d": 86400}
     gawtime = int(time[0]) * time_convert[time[-1]]
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = f"Ends in {time}")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = f"Ends in {time}")
     gaw_msg = await ctx.send(embed=embed)
 
     await gaw_msg.add_reaction("🎉")
@@ -47,7 +47,7 @@ class Giveaway(commands.Cog):
     winner = random.choice(users)
 
     embed = nextcord.Embed(title = "🎉 GIVEAWAY ENDED 🎉", description = f"Congratulations to {winner.mention} for winning the **{prize}**!", color = nextcord.Color.blue())
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(winner.mention, embed=embed)
 
   @gcreate.error

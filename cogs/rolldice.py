@@ -13,7 +13,7 @@ class RollDice(commands.Cog):
             description = f"The dice was rolled and landed on **{random.randint(1, 6)}**!",
             color = nextcord.Color.random()
         )
-        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
         await ctx.send(embed=embed)
 
 def setup(client):

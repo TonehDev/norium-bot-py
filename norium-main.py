@@ -21,7 +21,7 @@ async def load(ctx, extension):
                            color=nextcord.Color.blurple())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -35,7 +35,7 @@ async def unload(ctx, extension):
                            color=nextcord.Color.blurple())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -50,7 +50,7 @@ async def reload(ctx, extension):
                            color=nextcord.Color.blurple())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -88,7 +88,7 @@ class HelpDropdown(nextcord.ui.Select):
           embed.add_field(name="``;massunban``", value="Unbans all members at once")
           embed.set_footer(
               icon_url=
-              "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+              "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
               text="Norium Bot")
           await ctx.message.edit(embed=embed)
       
@@ -119,7 +119,7 @@ class HelpDropdown(nextcord.ui.Select):
                           value="View your or a certain user's warnings")
           embed.set_footer(
               icon_url=
-              "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+              "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
               text="Norium Bot")
           await ctx.message.edit(embed=embed)
 
@@ -151,7 +151,7 @@ class HelpDropdown(nextcord.ui.Select):
                     value="Create a giveaway")
             embed.set_footer(
               icon_url=
-              "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+              "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
               text="Norium Bot")
             await ctx.message.edit(embed=embed)
 
@@ -178,7 +178,7 @@ class HelpDropdown(nextcord.ui.Select):
                 embed.add_field(name="``;meme``", value="Sends a random meme")
                 embed.set_footer(
                   icon_url=
-                  "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+                  "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
                   text="Norium Bot")
                 await ctx.message.edit(embed=embed)
 
@@ -195,7 +195,7 @@ class HelpDropdown(nextcord.ui.Select):
                           value="The current version Norium Bot is on")
           embed.set_footer(
               icon_url=
-              "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+              "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
               text="Norium Bot")
           await ctx.message.edit(embed=embed)
 
@@ -226,7 +226,7 @@ async def help(ctx):
     embed.add_field(name="**OR**", value="Choose something from the dropdown below.")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed, view=view)
 
@@ -259,7 +259,7 @@ async def moderation(ctx):
                     value="View your or a certain user's warnings")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -278,7 +278,7 @@ async def misc(ctx):
                     value="The current version Norium Bot is on")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -307,7 +307,7 @@ async def fun(ctx):
     embed.add_field(name="``;meme``", value="Sends a random meme")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -328,7 +328,7 @@ async def management(ctx):
     embed.add_field(name="``;massunban``", value="Unbans all members at once")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -361,7 +361,7 @@ async def utility(ctx):
                     value="Create a giveaway")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -376,7 +376,7 @@ async def txtnuke(ctx):
         color=nextcord.Color.red())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
 
     view = Confirm()
@@ -410,7 +410,7 @@ class Confirm(nextcord.ui.View):
                                color=nextcord.Color.green())
         embed.set_footer(
             icon_url=
-            "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+            "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
             text="Norium Bot")
         await interaction.response.send_message(embed=embed, ephemeral=True)
         self.value = False
@@ -426,7 +426,7 @@ async def txtnuke_error(ctx, error):
             color=nextcord.Color.red())
         embed.set_footer(
             icon_url=
-            "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+            "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
             text="Norium Bot")
         await ctx.send(embed=embed)
 
@@ -440,11 +440,11 @@ async def about(ctx):
         color=nextcord.Color.blue())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     embed.set_image(
         url=
-        "https://cdn.discordapp.com/attachments/779402361734692914/875018579853074443/norium4.png"
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png"
     )
     await ctx.send(embed=embed)
 
@@ -466,7 +466,7 @@ async def error(ctx):
                     inline=False)
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -478,7 +478,7 @@ async def unknown(ctx):
                            color=nextcord.Color.red())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -491,7 +491,7 @@ async def permissions(ctx):
         color=nextcord.Color.red())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -505,7 +505,7 @@ async def syntax(ctx):
         color=nextcord.Color.red())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -518,7 +518,7 @@ async def member(ctx):
         color=nextcord.Color.red())
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 

@@ -14,14 +14,14 @@ class Start(commands.Cog):
         description = f"No command named ``{ctx.message.content}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
   @commands.Cog.listener()
   async def on_ready(self):
     await self.client.change_presence(activity=nextcord.Activity(
         type=nextcord.ActivityType.listening, name=";help"))
-    print(self.client.user.name + " is now online.")
+    print(self.client.user.name + " is online!")
 
 def setup(client):
   client.add_cog(Start(client))

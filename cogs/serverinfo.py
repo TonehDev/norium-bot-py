@@ -22,7 +22,7 @@ class ServerInfo(commands.Cog):
     embed.add_field(name = "Highest Role", value = f"``{ctx.guild.roles[-2]}``")
     embed.add_field(name = "Role Count", value = f"``{str(role_count)}``")
     embed.add_field(name = "Bots", value = ', '.join(bots))
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed) 
 def setup(client):
   client.add_cog(ServerInfo(client))

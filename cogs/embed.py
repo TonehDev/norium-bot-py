@@ -13,7 +13,7 @@ class CustomEmbed(commands.Cog):
       color = nextcord.Color.random()
     )
     await ctx.send(embed=embed)
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
 
   # Error Handling
   @embed.error
@@ -26,7 +26,7 @@ class CustomEmbed(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;embed <text>``", inline = False)
       embed.add_field(name = "Example", value = "``;embed Cats are amazing``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):

@@ -15,7 +15,7 @@ class Slowmode(commands.Cog):
         description = "You cannot set the slowmode above 6 hours!",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.reply.send(embed=embed)
     elif arg == 0:
       embed = nextcord.Embed(
@@ -23,7 +23,7 @@ class Slowmode(commands.Cog):
         description = "Slowmode has been turned off.",
         color = nextcord.Color.green()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.reply.send(embed=embed)
     else:
       
@@ -33,7 +33,7 @@ class Slowmode(commands.Cog):
           description = f"Set the slowmode delay to **{arg}** seconds!", 
           color = nextcord.Color.blurple()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed) #credit: glowstik
 
   # Error Handling
@@ -48,7 +48,7 @@ class Slowmode(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;slowmode <slowmode_in_seconds>``", inline = False)
       embed.add_field(name = "Example", value = "``;slowmode 3600``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -57,7 +57,7 @@ class Slowmode(commands.Cog):
         description = "You are missing the ``MANAGE_CHANNELS`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):

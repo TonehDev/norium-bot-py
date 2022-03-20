@@ -24,7 +24,7 @@ class Clear(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;clear <msg_amount>``", inline = False)
       embed.add_field(name = "Example", value = "``;clear 5``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed) #credit: lucas
 
 def setup(client):

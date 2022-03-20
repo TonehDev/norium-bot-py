@@ -19,7 +19,7 @@ class UserInfo(commands.Cog):
 
     embed = nextcord.Embed(title = f"{member.name}#{member.discriminator}'s Profile", color = member.color)
     embed.set_thumbnail(url = member.avatar.url)
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     embed.add_field(name = "ID", value = member.id)
     embed.add_field(name = "Nickname", value = member.display_name)
     embed.add_field(name = "Created at", value = member.created_at.strftime("%a, %#d, %B %Y, %I:%M %p UTC"))

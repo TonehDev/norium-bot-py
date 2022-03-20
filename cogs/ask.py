@@ -27,7 +27,7 @@ class Ask(commands.Cog):
                         inline="false")
         embed.set_footer(
             icon_url=
-            "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+            "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
             text="Norium Bot")
         embed.set_thumbnail(url = "https://cdn.discordapp.com/attachments/948235933709373470/948606008937312336/Webp.png")
         await ctx.send(embed=embed)

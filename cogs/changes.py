@@ -34,7 +34,7 @@ class Changes(commands.Cog):
     embed.add_field(name = "6# Posts", value = "``Gore, Nudes, NSFW generally`` are not allowed in this server.\nPlease make sure to report these kinds of people to staff!", inline = False)
     embed.add_field(name = "7# Loopholes", value = "``People who find loopholes`` will be banned without hesitation.\nMake sure to report these people aswell.", inline = False)
     embed.add_field(name = "8# Common Sense", value = "Please ``use your mind`` as we cannot state every rule.", inline = False)
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     message = await ctx.send(embed=embed)
     await message.add_reaction("✅")
     await ctx.message.delete()
@@ -48,8 +48,8 @@ class Changes(commands.Cog):
        description = f"{message}", 
       color = nextcord.Color.magenta()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
-    await ctx.reply.send(embed=embed)
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
+    await ctx.send(embed=embed)
     await ctx.message.delete()
 
   @commands.command()
@@ -61,8 +61,8 @@ class Changes(commands.Cog):
       description = f"{message}", 
       color = nextcord.Color.random()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
-    await ctx.reply.send(embed=embed)
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
+    await ctx.send(embed=embed)
     await ctx.message.delete()
   
   @commands.command()
@@ -74,7 +74,7 @@ class Changes(commands.Cog):
       description = f"{message}", 
       color = nextcord.Color.green()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed)
     await ctx.message.delete()
 

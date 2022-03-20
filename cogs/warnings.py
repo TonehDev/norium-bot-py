@@ -12,14 +12,6 @@ class Warnings(commands.Cog):
                *,
                reason="No reason provided."):
 
-    if member is None:
-        embed = nextcord.Embed(
-            title="Member Not Found",
-            description=
-            f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
-            color=nextcord.Color.red())
-        await ctx.send(embed=embed)
-
     embed = nextcord.Embed(
         title="Warn",
         description=
@@ -28,7 +20,7 @@ class Warnings(commands.Cog):
     embed.add_field(name="Reason", value=f"{reason}")
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await ctx.send(embed=embed)
 
@@ -44,7 +36,7 @@ class Warnings(commands.Cog):
     embed.add_field(name="Reason", value=f"{reason}", inline=False)
     embed.set_footer(
         icon_url=
-        "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+        "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
         text="Norium Bot")
     await member.send(embed=embed)
 
@@ -63,7 +55,7 @@ class Warnings(commands.Cog):
                         inline=False)
         embed.set_footer(
             icon_url=
-            "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png",
+            "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png",
             text="Norium Bot")
         await ctx.send(embed=embed)
 
@@ -71,6 +63,14 @@ class Warnings(commands.Cog):
         embed = nextcord.Embed(
             title="No Permissions",
             description="You are missing the ``MANAGE_MESSAGES`` permission.",
+            color=nextcord.Color.red())
+        await ctx.send(embed=embed)
+
+    elif isinstance(error, commands.MemberNotFound):
+        embed = nextcord.Embed(
+            title="Member Not Found",
+            description=
+            f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
             color=nextcord.Color.red())
         await ctx.send(embed=embed)
 

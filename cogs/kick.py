@@ -15,7 +15,7 @@ class Kick(commands.Cog):
       color = nextcord.Color.green()
     )
     embed.add_field(name = "Reason", value = f"{reason}")
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed)
 
     embed = nextcord.Embed(
@@ -38,7 +38,7 @@ class Kick(commands.Cog):
         value = f"{reason}",
         inline = False
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await member.send(embed=embed)
     await member.kick(reason=reason)
 
@@ -54,7 +54,7 @@ class Kick(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;kick @<user> [reason]``", inline = False)
       embed.add_field(name = "Example", value = "``;kick @BestGamer being too toxic``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -63,7 +63,7 @@ class Kick(commands.Cog):
         description = "You are missing the ``KICK_MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MemberNotFound):
@@ -72,7 +72,7 @@ class Kick(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):

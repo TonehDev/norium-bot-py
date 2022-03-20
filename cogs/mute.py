@@ -18,7 +18,7 @@ class Mute(commands.Cog):
           description = "We could not find the 'Muted' role. Creating one for you...",
           color = nextcord.Color.red()
         )
-        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
         await ctx.send(embed=embed)
         mutedRole = await guild.create_role(name = "Muted")
 
@@ -34,7 +34,7 @@ class Mute(commands.Cog):
         color = nextcord.Color.green()
       )
       embed.add_field(name = "Reason", value = f"{reason}")
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
     
       embed = nextcord.Embed(
@@ -57,7 +57,7 @@ class Mute(commands.Cog):
         value = f"{reason}",
         inline = False
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await member.send(embed=embed)
 
   @commands.command(aliases=["um"])
@@ -73,14 +73,14 @@ class Mute(commands.Cog):
       description = f"Successfully unmuted user ``{member.name}#{member.discriminator}``.", 
       color = nextcord.Color.green()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed)
     embed = nextcord.Embed(
       title = "You were unmuted",
       description = f"You were unmuted in **{ctx.guild.name}**",
       color = nextcord.Color.green()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await member.send(embed=embed)
 
   # Error Handling
@@ -95,7 +95,7 @@ class Mute(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;mute @<user> [reason]``", inline = False)
       embed.add_field(name = "Example", value = "``;mute @BestGamer swearing``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
     
     elif isinstance(error, commands.MemberNotFound):
@@ -104,7 +104,7 @@ class Mute(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -113,7 +113,7 @@ class Mute(commands.Cog):
         description = "You are missing the ``MANAGE_ROLES`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
   @unmute.error
@@ -126,7 +126,7 @@ class Mute(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;unmute @<user>``", inline = False)
       embed.add_field(name = "Example", value = "``;unmute @BestGamer``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -135,7 +135,7 @@ class Mute(commands.Cog):
         description = "You are missing the ``MANAGE_ROLES`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MemberNotFound):
@@ -144,7 +144,7 @@ class Mute(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):

@@ -20,7 +20,7 @@ class getMinecraftInfo(commands.Cog):
         )
         embed.add_field(name = "Skull Command (1.13+)",value='``/give @p minecraft:player_head{p1}SkullOwner:"{name}"{p2}'.format(p1="{",name=name,p2="}``"),inline=False)
         embed.add_field(name = "Skull Command (1.13-)",value='``/give @p minecraft:skull 1 3 {p1}SkullOwner:"{name}"{p2}'.format(p1="{",name=name,p2="}``"),inline=False)
-        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
         await ctx.send(embed=embed)
 
     # Error Handling
@@ -35,7 +35,7 @@ class getMinecraftInfo(commands.Cog):
         )
         embed.add_field(name = "Usage", value = "``;minecraft <player>``", inline = False)
         embed.add_field(name = "Example", value = "``;minecraft Notch``", inline = False)
-        embed.set_footer(icon_url = ctx.author.avatar.url, text = f"{ctx.author.name}#{ctx.author.discriminator}")
+        embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = f"Norium Bot")
         await ctx.send(embed=embed)
 
 def setup(bot):

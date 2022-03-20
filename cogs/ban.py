@@ -15,7 +15,7 @@ class Ban(commands.Cog):
       color = nextcord.Color.green()
     )
     embed.add_field(name = "Reason", value = f"{reason}")
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed)
 
     embed = nextcord.Embed(
@@ -38,7 +38,7 @@ class Ban(commands.Cog):
         value = f"{reason}",
         inline = False
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await member.send(embed=embed)
     await member.ban(reason=reason)
 
@@ -62,7 +62,7 @@ class Ban(commands.Cog):
                 name = "Moderator",
                 value = f"{ctx.author.mention}"
             )
-            embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+            embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
             await ctx.send(embed=embed)
             return
 
@@ -78,7 +78,7 @@ class Ban(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;ban @<user> [reason]``", inline = False)
       embed.add_field(name = "Example", value = "``;ban @BestGamer mass pinging``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -87,7 +87,7 @@ class Ban(commands.Cog):
         description = "You are missing the ``BAN_MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MemberNotFound):
@@ -96,7 +96,7 @@ class Ban(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
   @unban.error
@@ -109,7 +109,7 @@ class Ban(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;unban <user>#<tag>``", inline = False)
       embed.add_field(name = "Example", value = "``;unban BestGamer#1902``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -118,7 +118,7 @@ class Ban(commands.Cog):
         description = "You are missing the ``BAN_MEMBERS`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MemberNotFound):
@@ -127,7 +127,7 @@ class Ban(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):

@@ -15,7 +15,7 @@ class Moderate(commands.Cog):
       description = f"Successfully moderated {member.mention}'s nickname!",
       color = nextcord.Color.green()
     )
-    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+    embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
     await ctx.send(embed=embed)
 
   # Error Handling
@@ -30,7 +30,7 @@ class Moderate(commands.Cog):
       )
       embed.add_field(name = "Usage", value = "``;moderate @<member> <nickname>``", inline = False)
       embed.add_field(name = "Example", value = "``;moderate @BestGamer WorstGamer``", inline = False)
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MissingPermissions):
@@ -39,7 +39,7 @@ class Moderate(commands.Cog):
         description = "You are missing the ``MANAGE_NICKNAMES`` permission.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
     elif isinstance(error, commands.MemberNotFound):
@@ -48,7 +48,7 @@ class Moderate(commands.Cog):
         description = f"No member named ``{ctx.member.name}#{ctx.member.discriminator}`` found.",
         color = nextcord.Color.red()
       )
-      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/947123850305495091/947394665609564249/unknown.png", text = "Norium Bot")
+      embed.set_footer(icon_url = "https://cdn.discordapp.com/attachments/943924201688027206/955039552333053973/unknown.png", text = "Norium Bot")
       await ctx.send(embed=embed)
 
 def setup(client):
